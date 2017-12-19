@@ -1,0 +1,668 @@
+## intent:greet
+- hey
+- hello
+- hi
+- hi 
+- hello
+- hey
+- Get started
+- good morning
+- good morning
+- hey there
+- whats up?
+- hey
+- hello
+- hi
+- hey there
+- whats up?
+- Start over
+- Start over
+- Start over
+
+## intent:bye
+- bye
+- goodbye
+- good bye
+- stop
+- end
+- farewell
+- Bye bye
+- have a good one
+- see you later
+- goodbye,see you later
+- bye, take care
+- bye
+- goodbye
+- good bye
+- stop
+- end
+- farewell
+- Bye bye
+- have a good one
+- see you later
+- goodbye,see you later
+- bye, take care
+
+## intent:affirm
+- okay
+- kay
+- OK
+- okay
+- kay
+- OK
+- yes
+- yep
+- yeah
+- indeed
+- that's right
+- great
+- right,
+- correct
+- great choice
+- sounds really good
+- yes
+- yep
+- yeah
+- indeed
+- that's right
+- great
+- right,
+- correct
+- great choice
+- sounds really good
+
+## intent:deny
+- no
+- not now
+- no thank you
+- you are wrong
+- absolutely not
+- no
+- not now
+- no thank you
+- you are wrong
+- absolutely not
+- no
+- not now
+- no thank you
+- you are wrong
+- absolutely not
+- no
+- nope
+- not now
+- no thank you
+- you are wrong
+- absolutely not
+
+## intent:praise
+- thumbs up
+- thumbs up
+- thumbs up
+- thumbs up
+- thumbs up
+- thumbs up
+- good
+- nice
+- good one
+- nice one
+- that was good
+- cool
+- good
+- nice
+- good one
+- nice one
+- that was good
+- cool 
+- good
+- nice
+- good one
+- nice one
+- that was good
+- cool
+- Great
+- Great
+- Great
+- Great
+- Great
+
+## intent:bad
+- thumbs down
+- thumbs down
+- thumbs down
+- thumbs down
+- thumbs down
+- thumbs down
+- thumbs down
+- thumbs down
+- thumbs down
+- thumbs down
+- thumbs down
+- bad
+- not good
+- bad
+- not good
+- bad
+- not good
+- bad
+- not good
+- bad
+- not good
+- bad
+- not good
+- bad
+- not good
+- bad
+- not good
+- bad
+- not good
+- ba
+- not good
+- very bad
+- very bad
+- very bad
+- very bad
+- very bad
+- very bad
+
+
+## intent:thankyou
+- thanks
+- thank you
+- thank u
+- thanks
+- thank you
+- thank u
+- thanks
+- thank you
+- thank u
+- thanks
+- thank you
+- thank u
+- thanks
+- thank you
+- thank u
+- thanks
+- thank you
+- thank u
+- thanks
+- thank you
+- thank u
+- thanks
+- thank you
+- thank u
+
+## intent:cancel
+- cancel
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+- cancel 
+
+## intent:more
+- view more
+- more
+- few more
+- more options please
+- view more
+- more
+- few more
+- more options please
+- view more
+- more
+- few more
+- more options please
+- view more
+- more
+- few more
+- more options please
+- view more
+- more
+- few more
+- more options please
+- view more
+- more
+- few more
+- more options please
+
+## intent:goback
+- back
+- go back
+- please go back
+- back
+- go back
+- please go back
+- back
+- go back
+- please go back
+- back
+- go back
+- please go back
+- back
+- go back
+- please go back
+- back
+- go back
+- please go back
+- back
+- go back
+- please go back
+- back
+- go back
+- please go back
+- back
+- go back
+- please go back
+- back
+- go back
+- please go back
+- back
+- go back
+- please go back
+- back
+- go back
+- please go back
+
+## intent:informflights
+- I want to book a [flight](services) from [bangalore](origin) to [delhi](destination) on [30th of september](date)
+- I want to book a [flight](services)
+- book a [flight](services)
+- can you book a [flight](services) for me
+- book a [flight](services) for me
+- I want a [flight](services)
+- [flight](services) from [mumbai](origin) to [delhi](destination) [next tuesday](date)
+- [flight](services) to [goa](destination) on [sunday](date)
+- I want a [flight](services) from [delhi](origin) to [kathmandu](destination) on [4 august](date)
+- book a [flight](services) for [tomorrow](date) from [bangalore](origin)
+- Book a [flight](services) from [chennai](origin)
+- I want a [flight](services) from [mumbai](origin) to [dubai](destination)
+- I want a [flight](services) on [25 august](date)
+- I want a [flight](services) to [delhi](destination)
+- I want a [flight](services) to [bangalore](destination)
+- I want a [flight](services) from [delhi](origin) to [kathmandu](destination) on [4 august](date)
+- book a [flight](services) for [tomorrow](date) from [bangalore](origin)
+- Book a [flight](services) from [chennai](origin)
+- I want a [flight](services) from [mumbai](origin) to [dubai](destination)
+- I want to book a [flight](services)
+- book a [flight](services)
+- can you book a [flight](services) for me
+- book a [flight](services) for me
+- I want a [flight](services)
+- I want a [flight](services) from [delhi](origin) to [kathmandu](destination) on [4 august](date)
+- book a [flight](services) for [tomorrow](date) from [bangalore](origin)
+- Book a [flight](services) from [chennai](origin)
+- I want a [flight](services) from [mumbai](origin) to [dubai](destination)
+- I want a [flight](services) on [25 august](date)
+- I want a [flight](services) to [delhi](destination)
+- I want a [flight](services) to [bangalore](destination)
+- I want a [flight](services) from [delhi](origin) to [kathmandu](destination) on [4 august](date)
+- book a [flight](services) for [tomorrow](date) from [bangalore](origin)
+- Book a [flight](services) from [chennai](origin)
+- I want a [flight](services) from [mumbai](origin) to [dubai](destination)
+- i want to book a [flight](services) to [delhi](destination) from [bangalore](origin)
+- I want a [flight](services) on [25 august](date) for [2](people) people
+- I want a [flight](services) to [delhi](destination) for [three](people) people
+- I want a one way [flight](services) from [mumbai](origin) to [dubai](destination)
+- I want a one way [flight](services) on [25 august](date)
+- I want a one way [flight](services) to [delhi](destination)
+- I want a one way [flight](services) to [bangalore](destination)
+- I want a one way [flight](services) from [delhi](origin) to [kathmandu](destination) on [4 august](date)
+- book a one way [flight](services) for [tomorrow](date) from [bangalore](origin)
+- Book a one way [flight](services) from [chennai](origin)
+- I want a one way [flight](services) from [mumbai](origin) to [dubai](destination)
+- I want to book a one way [flight](services)
+- book a one way [flight](services)
+- can you book a one way [flight](services) for me
+- I want a oneway [flight](services) from [mumbai](origin) to [dubai](destination)
+- I want a oneway [flight](services) on [25 august](date)
+- I want a oneway [flight](services) to [delhi](destination)
+- I want a oneway [flight](services) to [bangalore](destination)
+- I want a oneway [flight](services) from [delhi](origin) to [kathmandu](destination) on [4 august](date)
+- book a oneway [flight](services) for [tomorrow](date) from [bangalore](origin)
+- Book a oneway [flight](services) from [chennai](origin)
+- I want a oneway [flight](services) from [mumbai](origin) to [dubai](destination)
+- I want to book a oneway [flight](services)
+- book a oneway [flight](services)
+- can you book a oneway [flight](services) for me
+- one way flight
+- one way flight
+- one way flight
+- one way flight
+- one way flight
+
+## intent:informreturnflights
+- Return Flight
+- Return Flight
+- Return Flight
+- Return Flight
+- Return Flight
+- Return Flight
+- Return Flight
+- I want a return [flight](services) from [mumbai](origin) to [dubai](destination)
+- I want a return [flight](services) on [25 august](date)
+- I want a return [flight](services) to [delhi](destination)
+- I want a return [flight](services) to [bangalore](destination)
+- I want a return [flight](services) from [delhi](origin) to [kathmandu](destination) on [4 august](date)
+- book a return [flight](services) for [tomorrow](date) from [bangalore](origin)
+- Book a return [flight](services) from [chennai](origin)
+- I want a return [flight](services) from [mumbai](origin) to [dubai](destination)
+- I want to book a return [flight](services)
+- book a return [flight](services)
+- can you book a return [flight](services) for me
+
+## intent:book
+- oAI-608 BLR BOM 2017-09-19T1740 2017-09-19T1910 1900 2585
+- oAI-604 BLR BOM 2017-09-19T0850 2017-09-19T1030 1900 2585
+- oAI-610 BLR BOM 2017-09-19T1920 2017-09-19T2100 1900 2585
+- oAI-640 BLR BOM 2017-09-19T0645 2017-09-19T0825 1900 2585
+- oSG-1239_SG-704 BLR BOM 2017-09-19T2200 2017-09-19T2310 1962 2626
+- oG8-418 BLR BOM 2017-09-19T0545 2017-09-19T0715 1842 2719
+- oSG-438 BLR BOM 2017-09-19T0750 2017-09-19T0925 2362 3046
+- oSG-456 BLR BOM 2017-09-19T2030 2017-09-19T2155 2362 3046
+- o6E-456 BLR BOM 2017-09-19T0510 2017-09-19T0650 2075 3296
+- o6E-482 BLR BOM 2017-09-19T0610 2017-09-19T0745 2075 3296
+- oSG-1063_SG-422 BLR BOM 2017-09-19T0840 2017-09-19T0955 3312 4044
+- oG8-395 BLR BOM 2017-09-19T0810 2017-09-19T0950 3516 4477
+- oG8-320 BLR BOM 2017-09-19T1635 2017-09-19T1815 3516 4477
+- oG8-526 BLR BOM 2017-09-19T2200 2017-09-19T2345 3516 4477
+- o6E-424 BLR BOM 2017-09-19T0710 2017-09-19T0850 3200 4477
+- o6E-464 BLR BOM 2017-09-19T0925 2017-09-19T1105 3200 4477
+- o6E-346 BLR BOM 2017-09-19T1020 2017-09-19T1205 3200 4477
+- o6E-361 BLR BOM 2017-09-19T1535 2017-09-19T1720 3200 4477
+- o6E-566 BLR BOM 2017-09-19T1935 2017-09-19T2115 3200 4477
+- o6E-3794 BLR BOM 2017-09-19T2130 2017-09-19T2310 3200 4477
+- o6E-266_6E-608 BLR BOM 2017-09-19T0630 2017-09-19T0730 3200 4531
+- o6E-186_6E-608 BLR BOM 2017-09-19T0730 2017-09-19T0840 3200 4531
+- o6E-262_6E-809 BLR BOM 2017-09-19T1200 2017-09-19T1255 3200 4531
+- o9W-449 BLR BOM 2017-09-19T2155 2017-09-19T2335 3425 4664
+- o9W-410 BLR BOM 2017-09-19T0545 2017-09-19T0730 3425 4664
+- o9W-7133 BLR BOM 2017-09-19T1205 2017-09-19T1345 3425 4664
+- o9W-7146 BLR BOM 2017-09-19T2245 2017-09-20T0025 3425 4664
+- o9W-2401_9W-434 BLR BOM 2017-09-19T1905 2017-09-19T2015 5450 7394
+- oAI-608 BLR BOM 2017-09-19T1740 2017-09-19T1910 1900 2585
+- oAI-604 BLR BOM 2017-09-19T0850 2017-09-19T1030 1900 2585
+- oAI-610 BLR BOM 2017-09-19T1920 2017-09-19T2100 1900 2585
+- oAI-640 BLR BOM 2017-09-19T0645 2017-09-19T0825 1900 2585
+- oSG-1239_SG-704 BLR BOM 2017-09-19T2200 2017-09-19T2310 1962 2626
+- oG8-418 BLR BOM 2017-09-19T0545 2017-09-19T0715 1842 2719
+- oSG-438 BLR BOM 2017-09-19T0750 2017-09-19T0925 2362 3046
+- oSG-456 BLR BOM 2017-09-19T2030 2017-09-19T2155 2362 3046
+- o6E-456 BLR BOM 2017-09-19T0510 2017-09-19T0650 2075 3296
+- o6E-482 BLR BOM 2017-09-19T0610 2017-09-19T0745 2075 3296
+- oSG-1063_SG-422 BLR BOM 2017-09-19T0840 2017-09-19T0955 3312 4044
+- oG8-395 BLR BOM 2017-09-19T0810 2017-09-19T0950 3516 4477
+- oG8-320 BLR BOM 2017-09-19T1635 2017-09-19T1815 3516 4477
+- oG8-526 BLR BOM 2017-09-19T2200 2017-09-19T2345 3516 4477
+- o6E-424 BLR BOM 2017-09-19T0710 2017-09-19T0850 3200 4477
+- o6E-464 BLR BOM 2017-09-19T0925 2017-09-19T1105 3200 4477
+- o6E-346 BLR BOM 2017-09-19T1020 2017-09-19T1205 3200 4477
+- o6E-361 BLR BOM 2017-09-19T1535 2017-09-19T1720 3200 4477
+- o6E-566 BLR BOM 2017-09-19T1935 2017-09-19T2115 3200 4477
+- o6E-3794 BLR BOM 2017-09-19T2130 2017-09-19T2310 3200 4477
+- o6E-266_6E-608 BLR BOM 2017-09-19T0630 2017-09-19T0730 3200 4531
+- o6E-186_6E-608 BLR BOM 2017-09-19T0730 2017-09-19T0840 3200 4531
+- o6E-262_6E-809 BLR BOM 2017-09-19T1200 2017-09-19T1255 3200 4531
+- o9W-449 BLR BOM 2017-09-19T2155 2017-09-19T2335 3425 4664
+- o9W-410 BLR BOM 2017-09-19T0545 2017-09-19T0730 3425 4664
+- o9W-7133 BLR BOM 2017-09-19T1205 2017-09-19T1345 3425 4664
+- o9W-7146 BLR BOM 2017-09-19T2245 2017-09-20T0025 3425 4664
+- o9W-2401_9W-434 BLR BOM 2017-09-19T1905 2017-09-19T2015 5450 7394
+- oAI-608 BLR BOM 2017-09-19T1740 2017-09-19T1910 1900 2585
+- oAI-604 BLR BOM 2017-09-19T0850 2017-09-19T1030 1900 2585
+- oAI-610 BLR BOM 2017-09-19T1920 2017-09-19T2100 1900 2585
+- oAI-640 BLR BOM 2017-09-19T0645 2017-09-19T0825 1900 2585
+- oSG-1239_SG-704 BLR BOM 2017-09-19T2200 2017-09-19T2310 1962 2626
+- oG8-418 BLR BOM 2017-09-19T0545 2017-09-19T0715 1842 2719
+- oSG-438 BLR BOM 2017-09-19T0750 2017-09-19T0925 2362 3046
+- oSG-456 BLR BOM 2017-09-19T2030 2017-09-19T2155 2362 3046
+- o6E-456 BLR BOM 2017-09-19T0510 2017-09-19T0650 2075 3296
+- o6E-482 BLR BOM 2017-09-19T0610 2017-09-19T0745 2075 3296
+- oSG-1063_SG-422 BLR BOM 2017-09-19T0840 2017-09-19T0955 3312 4044
+- oG8-395 BLR BOM 2017-09-19T0810 2017-09-19T0950 3516 4477
+- oG8-320 BLR BOM 2017-09-19T1635 2017-09-19T1815 3516 4477
+- oG8-526 BLR BOM 2017-09-19T2200 2017-09-19T2345 3516 4477
+- o6E-424 BLR BOM 2017-09-19T0710 2017-09-19T0850 3200 4477
+- o6E-464 BLR BOM 2017-09-19T0925 2017-09-19T1105 3200 4477
+- o6E-346 BLR BOM 2017-09-19T1020 2017-09-19T1205 3200 4477
+- o6E-361 BLR BOM 2017-09-19T1535 2017-09-19T1720 3200 4477
+- o6E-566 BLR BOM 2017-09-19T1935 2017-09-19T2115 3200 4477
+- o6E-3794 BLR BOM 2017-09-19T2130 2017-09-19T2310 3200 4477
+- o6E-266_6E-608 BLR BOM 2017-09-19T0630 2017-09-19T0730 3200 4531
+- o6E-186_6E-608 BLR BOM 2017-09-19T0730 2017-09-19T0840 3200 4531
+- o6E-262_6E-809 BLR BOM 2017-09-19T1200 2017-09-19T1255 3200 4531
+- o9W-449 BLR BOM 2017-09-19T2155 2017-09-19T2335 3425 4664
+- o9W-410 BLR BOM 2017-09-19T0545 2017-09-19T0730 3425 4664
+- o9W-7133 BLR BOM 2017-09-19T1205 2017-09-19T1345 3425 4664
+- o9W-7146 BLR BOM 2017-09-19T2245 2017-09-20T0025 3425 4664
+- o9W-2401_9W-434 BLR BOM 2017-09-19T1905 2017-09-19T2015 5450 7394
+- oAI-608 BLR BOM 2017-09-19T1740 2017-09-19T1910 1900 2585
+- oAI-604 BLR BOM 2017-09-19T0850 2017-09-19T1030 1900 2585
+- oAI-610 BLR BOM 2017-09-19T1920 2017-09-19T2100 1900 2585
+- oAI-640 BLR BOM 2017-09-19T0645 2017-09-19T0825 1900 2585
+- oSG-1239_SG-704 BLR BOM 2017-09-19T2200 2017-09-19T2310 1962 2626
+- oG8-418 BLR BOM 2017-09-19T0545 2017-09-19T0715 1842 2719
+- oSG-438 BLR BOM 2017-09-19T0750 2017-09-19T0925 2362 3046
+- oSG-456 BLR BOM 2017-09-19T2030 2017-09-19T2155 2362 3046
+- o6E-456 BLR BOM 2017-09-19T0510 2017-09-19T0650 2075 3296
+- o6E-482 BLR BOM 2017-09-19T0610 2017-09-19T0745 2075 3296
+- oSG-1063_SG-422 BLR BOM 2017-09-19T0840 2017-09-19T0955 3312 4044
+- oG8-395 BLR BOM 2017-09-19T0810 2017-09-19T0950 3516 4477
+- oG8-320 BLR BOM 2017-09-19T1635 2017-09-19T1815 3516 4477
+- oG8-526 BLR BOM 2017-09-19T2200 2017-09-19T2345 3516 4477
+- o6E-424 BLR BOM 2017-09-19T0710 2017-09-19T0850 3200 4477
+- o6E-464 BLR BOM 2017-09-19T0925 2017-09-19T1105 3200 4477
+- o6E-346 BLR BOM 2017-09-19T1020 2017-09-19T1205 3200 4477
+- o6E-361 BLR BOM 2017-09-19T1535 2017-09-19T1720 3200 4477
+- o6E-566 BLR BOM 2017-09-19T1935 2017-09-19T2115 3200 4477
+- o6E-3794 BLR BOM 2017-09-19T2130 2017-09-19T2310 3200 4477
+- o6E-266_6E-608 BLR BOM 2017-09-19T0630 2017-09-19T0730 3200 4531
+- o6E-186_6E-608 BLR BOM 2017-09-19T0730 2017-09-19T0840 3200 4531
+- o6E-262_6E-809 BLR BOM 2017-09-19T1200 2017-09-19T1255 3200 4531
+- o9W-449 BLR BOM 2017-09-19T2155 2017-09-19T2335 3425 4664
+- o9W-410 BLR BOM 2017-09-19T0545 2017-09-19T0730 3425 4664
+- o9W-7133 BLR BOM 2017-09-19T1205 2017-09-19T1345 3425 4664
+- o9W-7146 BLR BOM 2017-09-19T2245 2017-09-20T0025 3425 4664
+- o9W-2401_9W-434 BLR BOM 2017-09-19T1905 2017-09-19T2015 5450 7394
+
+## intent:inform
+- on [25th july, 2017](date)
+- from [delhi](origin) to [bangalore](destination) for today(date)
+- from [mumbai](origin) to [bangalore](destination) for tomorrow(date)
+- [Mangaluru](location)
+- [Baharampur](location)
+- [guwahati](location)
+- [Karur](location)
+- [Sahaspur](location)
+- [Parli](location)
+- [Chennai](location)
+- [Khair](location)
+- [Shahabad](location)
+- [Karimganj](location)
+- [jaipur](location)
+- [Savanur](location)
+- [Guntakal](location)
+- [Dhamtari](location)
+- [Mahidpur](location)
+- [Mathura](location)
+- [Puthuppally](location)
+- [Sainthia](location)
+- [Kochi](location)
+- [Safipur](location)
+- [Jagtial](location)
+- [Muktsar](location)
+- [Rahatgarh](location)
+- [Patiala](location)
+- [Ahmedabad](location)
+- [Ratia](location)
+- [Charkhi Dadri](location)
+- [Reengus](location)
+- [Varanasi](location)
+- [madras](location)
+- [Sugauli](location)
+- [tamilnadu](location)
+- [Sidhpur](location)
+- [Lalgudi](location)
+- [Tirukkoyilur](location)
+- [Sadri](location)
+- [Kerala](location)
+- [New Delhi](location)
+- [Chhapra](location)
+- [Ramagundam](location)
+- [Kadapa](location)
+- [Pali](location)
+- [Satna](location)
+- [Vizianagaram](location)
+- [Katihar](location)
+- [Hardwar](location)
+- [Haridwar](location)
+- [Sonipat](location)
+- [Nagercoil](location)
+- [Thanjavur](location)
+- [Murwara](location)
+- [Naihati](location)
+- [Sambhal](location)
+- [Nadiad](location)
+- [English Bazar](location)
+- [Yamunanagar](location)
+- [Munger](location)
+- [Eluru](location)
+- [Panchkula](location)
+- [Raayachuru](location)
+- [Panvel](location)
+- [goa](location)
+- [on 25 july, 2017](date)
+- [on 25 july 2017](date)
+- [25-8-2017](date)
+- [2017-07-25](date)
+- [25 september](date)
+- [25 sept](date)
+- [tomorrow](date)
+- [today](date)
+- [today](date)
+- [today](date)
+- [friday](date)
+- [monday](date)
+- [next monday](date)
+- [next friday](date)
+- [next tuesday](date)
+- [next mon](date)
+- [next fri](date)
+- [next tue](date)
+- [next thursday](date)
+- [next sat](date)
+- [next sun](date)
+- from [jaipur](origin)
+- from [mumbai](origin)
+- to [bangalore](destination)
+- to [haridwar](destination)
+- [one](people) people
+- [two](people) people
+- [three](people) people
+- [four](people) people
+- [five](people) people
+- [six](people) people
+- [seven](people) people
+- [eight](people) people
+- [nine](people) people
+- [ten](people) people
+- [1](people) people
+- [2](people) people
+- [3](people) people
+- [4](people) people
+- [5](people) people
+- [6](people) people
+- [7](people) people
+- [8](people) people
+- [11](people) people
+- [13](people) people
+- [17](people) people
+- [21](people) people
+- [15](people) people
+- [one](people)
+- [two](people)
+- [three](people)
+- [four](people)
+- [five](people)
+- [six](people)
+- [seven](people)
+- [eight](people)
+- [nine](people)
+- [ten](people)
+- [1](people)
+- [2](people)
+- [3](people)
+- [4](people)
+- [5](people)
+- [6](people)
+- [7](people)
+- [8](people)
+- [11](people)
+- [13](people)
+- [17](people)
+- [21](people)
+- [15](people)
+
+## intent:names
+- mukesh
+- mukesh vishwa sameer
+- sameer vishwa sangram
+- mukesh vishwa
+- vishwa sameer
+- ajay rahul
+- prashant
+- mayank
+- mukesh
+- mukesh vishwa sameer
+- sameer vishwa sangram
+- mukesh vishwa
+- vishwa sameer
+- ajay rahul
+- prashant
+- mayank
+- mukesh
+- mukesh vishwa sameer
+- sameer vishwa sangram
+- mukesh vishwa
+- vishwa sameer
+- ajay rahul
+- prashant
+- mayank
+- mukesh
+- mukesh vishwa sameer
+- sameer vishwa sangram
+- mukesh vishwa
+- vishwa sameer
+- ajay rahul
+- prashant
+- mayank
+- mukesh
+- mukesh vishwa sameer
+- sameer vishwa sangram
+- mukesh vishwa
+- vishwa sameer
+- ajay rahul
+- prashant
+- mayank

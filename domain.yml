@@ -1,0 +1,100 @@
+slots:
+  services:
+    type: text
+  location:
+    type: text
+  destination:
+    type: text
+  origin:
+    type: text
+  date_on:
+    type: text
+  count:
+    type: text
+  flight_oneway:
+    type: text
+  flight_return:
+    type: text
+  return_date:
+    type: text 
+  book:
+    type: text
+  book_return:
+    type: text  
+  people:
+    type: text
+  
+intents:
+ - bye
+ - bad
+ - more
+ - greet
+ - affirm
+ - cancel
+ - deny
+ - praise
+ - inform
+ - thankyou
+ - goodbye
+ - informflights
+ - book
+ - names
+ - informreturnflights
+
+entities:
+ - date
+ - services
+ - origin
+ - destination
+ - location
+ - people
+
+templates:
+  utter_ack_dosearch: 
+     - ok let me see what I can find
+  utter_on_it: 
+     - I'm on it
+  utter_ask_origin:
+     - Please tell me the origin.
+  utter_ask_destination:
+     - Please tell me the destination.
+  utter_ask_date:
+     - Please tell me the date.
+  utter_close_conversation:
+     - Thanks for your feedback see you later.
+  utter_ask_people:
+     - please tell me the number of adults.
+  utter_ask_names:
+     - please enter the first name of all the passengers seaparated by a comma(,).
+  utter_ask_returndate:
+     - please tell me the return date.
+
+actions:
+  - ack_dosearch
+  - on_it
+  - ask_origin
+  - ask_destination
+  - ask_date
+  - ask_people
+  - ask_names
+  - ask_returndate
+  - close_conversation
+  #- actions.ActionAskPrice
+  - actions.ActionHowCanHelp
+  - actions.ActionMoreUpdates
+  - actions.ActionFlightOffer
+  - actions.ActionHelpMore
+  #- actions.ActionAuthentication
+  - actions.ActionSearchFlight
+  - actions.ActionReturnFlight
+  - actions.ActionStoreOrigin
+  - actions.ActionStoreReturnDate
+  - actions.ActionStoreDate
+  - actions.ActionStoreReturnBook
+  - actions.ActionStoreBook
+  - actions.ActionStoreDestination
+  - actions.ActionItinerary
+  - actions.ActionBye
+  - actions.ActionCleanSlots
+  - actions.ActionCancel
+  #- actions.ActionRestart
