@@ -1,1 +1,3 @@
-Chatbot
+This is a template of achatbot which can be used to book flights(by doing some modifications in its datset according to your use). I have used Goibibo Api to get information about flights. The codes available in rasa_dm directory has small differences from original rasa_dm by rasa.ai.
+Pymessenger used in this project also has lots of difference and modeification from the original pymessenger by davidchua, bcoz it has not been updated for a long time.
+The bot can be hosted using localtunnel, installation instruction for local tunnel can be seen here https://localtunnel.github.io/www/, but there is a problem in running localtunnel i.e it stops after certain time. To run it continuously a ruby script is added which i found on the web and steps to run it has been noted in ruby_installation_guide file.
