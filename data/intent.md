@@ -323,7 +323,6 @@
 - Book a [flight](services) from [chennai](origin)
 - I want a [flight](services) from [mumbai](origin) to [dubai](destination)
 - i want to book a [flight](services) to [delhi](destination) from [bangalore](origin)
-- I want a [flight](services) on [25 august](date) for [2](people) people
 - I want a [flight](services) to [delhi](destination) for [three](people) people
 - I want a one way [flight](services) from [mumbai](origin) to [dubai](destination)
 - I want a one way [flight](services) on [25 august](date)

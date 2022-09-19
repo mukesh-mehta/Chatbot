@@ -141,7 +141,6 @@ class Trainer(object):
             components.validate_arguments(self.pipeline, context)
 
         working_data = copy.deepcopy(data)  # data gets modified internally during the training - hence the copy
-
         for i, component in enumerate(self.pipeline):
             logger.info("Starting to train component {}".format(component.name))
             component.prepare_partial_processing(self.pipeline[:i], context)
