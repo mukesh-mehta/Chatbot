@@ -1,0 +1,80 @@
+async-timeout==4.0.2
+attrs @ file:///opt/conda/conda-bld/attrs_1642510447205/work
+blis @ file:///C:/ci/cython-blis_1613319550054/work
+boto3==1.23.10
+botocore==1.26.10
+brotlipy==0.7.0
+catalogue @ file:///tmp/build/80754af9/catalogue_1608238891378/work
+certifi==2021.5.30
+cffi @ file:///C:/ci/cffi_1625831763871/work
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.2.0
+colorama==0.4.5
+confection==0.0.1
+contextvars==2.4
+cryptography @ file:///C:/ci/cryptography_1635366724772/work
+cymem==2.0.6
+dataclasses==0.8
+Deprecated==1.2.13
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.0/en_core_web_sm-2.3.0.tar.gz
+fakeredis==1.7.4
+Flask==2.0.3
+future==0.18.2
+idna==3.4
+immutables==0.19
+importlib-metadata==4.8.3
+importlib-resources==5.4.0
+itsdangerous==2.0.1
+Jinja2==3.0.3
+jmespath==0.10.0
+joblib==1.1.0
+jsonpickle==2.2.0
+jsonschema==3.0.2
+langcodes==3.3.0
+MarkupSafe==2.0.1
+mkl-fft==1.3.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+murmurhash==1.0.8
+numpy==1.19.5
+packaging==21.3
+pathy==0.6.2
+plac==1.1.3
+preshed==3.0.7
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydantic==1.9.2
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing==3.0.9
+pyrsistent @ file:///C:/ci/pyrsistent_1600141799440/work
+PySocks @ file:///C:/ci/pysocks_1605305839978/work
+python-crfsuite==0.9.8
+python-dateutil==2.8.2
+PyYAML==6.0
+redis==4.2.2
+requests @ file:///opt/conda/conda-bld/requests_1641824580448/work
+requests-toolbelt==0.9.1
+s3transfer==0.5.2
+scikit-learn==0.24.2
+scipy==1.5.4
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+sklearn-crfsuite==0.3.6
+smart-open==5.2.1
+sortedcontainers==2.4.0
+spacy @ file:///C:/ci/spacy_1608303000480/work
+spacy-legacy==3.0.10
+spacy-loggers==1.0.3
+srsly @ file:///C:/ci/srsly_1607548189686/work
+tabulate==0.8.10
+thinc @ file:///C:/ci/thinc_1607710275191/work
+threadpoolctl==3.1.0
+tqdm==4.64.1
+typer==0.4.2
+typing_extensions==4.1.1
+urllib3==1.26.12
+wasabi==0.10.1
+Werkzeug==2.0.3
+win-inet-pton @ file:///C:/ci/win_inet_pton_1605306197271/work
+wincertstore==0.2
+wrapt==1.14.1
+zipp==3.6.0
