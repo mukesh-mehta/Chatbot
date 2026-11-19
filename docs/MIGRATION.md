@@ -30,14 +30,16 @@ The archive is a reference, not a working compatibility layer.
 Facebook callbacks, message signatures, user-profile lookups, old supplier
 credentials, old model weights, machine-learning training, passenger names,
 ticket issuance, and payment behavior are not supported by the new runtime.
-The archived NLU examples can inform a future labeled evaluation set only after
-format, provenance, and data-quality review. Do not load the archived pickles
-into the modern application.
+Archived models, NLU examples, and third-party source are not inputs to the active
+roadmap. Do not load the archived pickles into the modern application or include
+the archive in a distributable source bundle without clearing its contents and
+licensing file by file.
 
 The current route parser is not equivalent to a trained Rasa pipeline. It is
 deterministic and exposes its limits through clear fallback messages and an
-editable form. See roadmap phases M2 and M3 for evaluated language understanding
-and live provider work.
+editable form. Roadmap features **F03–F05** extend the local frontend, multi-city
+trip representation, and fictional schedule search. AI model work and live
+supplier integration are outside that development phase.
 
 ## Compatibility contract
 
@@ -56,7 +58,9 @@ and live provider work.
 Create a clean Python 3.12 environment, install the locked requirements, run the
 unit tests, compile active modules, and start the HTTP server. Exercise at least
 one multi-turn conversation, a round trip, an invalid date, and itinerary export.
-Run the container smoke check and wait for both OS jobs before merging.
+The local checks require no container. The existing hosted CI additionally checks
+both operating systems and optional container packaging; run its container smoke
+check locally when Docker is available, or inspect the hosted result.
 
 If re-resolving dependencies with `uv`, use:
 

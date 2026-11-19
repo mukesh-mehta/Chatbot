@@ -38,7 +38,7 @@ a live conversation region, inline validation, native radio/date/select controls
 and reduced-motion handling. These are implementation choices, not a formal
 accessibility certification. Screen-reader behavior across browsers, touch-target
 sizes, contrast, zoom, and mobile keyboard behavior still require a systematic
-audit; see **FE-02** and **FE-03** in [the roadmap](../ROADMAP.md).
+audit; see **F03** in [the roadmap](../ROADMAP.md).
 
 ## State and privacy boundaries
 
@@ -68,14 +68,41 @@ escaped. Use text nodes for conversation content.
 
 ## Next frontend delivery slices
 
-1. **Reliable interactions:** component boundaries, automated browser journeys,
-   stale-response tests, draft persistence, focused announcements (FE-01–FE-04).
-2. **Finding the right flight:** searchable airport combobox, date-range selection,
-   filters, comparison, and expanded fare details (FE-05–FE-08).
-3. **Returning to a trip:** accessible itinerary drawer, saved searches, expiration
-   cues, localization, and share permissions (FE-09–FE-12).
-4. **Production feedback:** measured performance, error recovery, design-system
-   documentation, and telemetry that avoids message content (FE-13–FE-16).
+All slices below are **planned**. They use local services, fictional schedules,
+and synthetic test identities. The current interface does not yet expose these
+expanded workflows.
+
+| Slice | Roadmap IDs | Screens and interactions | Completion evidence |
+| --- | --- | --- | --- |
+| Durable workspace | F01, F03 | Named trip list, pagination, create/rename/duplicate/archive, recoverable drafts | Reopen after restart; failed saves preserve input; late responses cannot change another trip |
+| Local identities and safe edits | F02, F03, F07 | Login/logout, session expiry, account-scoped drafts, saved-versus-draft conflict view | Isolated user contexts; denied access; two-tab conflict and lost-response retry journeys |
+| Multi-city planning | F04, F05 | Searchable airport combobox, leg controls, timezone details, schedule-version display | Keyboard selection; leg reorder; overnight and date-boundary cases; unsupported-search feedback |
+| Comparison and portable files | F06, F09 | Combined filters, three-option comparison, import preview, printable itinerary | Correct totals; empty states; atomic import failure; escaped output; v0.2 migration |
+| Shared plans and simulated changes | F08, F10 | Role/member controls, revision history, scenario playback, alert drawer | Revocation during an open edit; history restoration; duplicate-event and restart handling |
+| Recovery and diagnostics | F11, F12 | Backup/restore outcomes, cleanup status, local health and workload reports | Corrupt-backup feedback; recoverable interruption; measured limits without exposing draft content |
+
+Every new screen needs loading, empty, validation, permission-loss, and retry
+states where applicable. Preserve keyboard focus, use text as well as color for
+status, and keep sample-data labels visible. A saved selection or simulated
+cancellation must never look like a real ticket or supplier action.
+
+## Browser acceptance plan
+
+Use the running local API with temporary databases and isolated browser contexts.
+Select a browser executable available in the target environment; installation of
+a new browser during an offline session is not a prerequisite.
+
+- Cover complete milestone journeys through visible controls, including reload,
+  session expiry, denied requests, delayed replies, and connection recovery.
+- Check the primary flows by keyboard, at 200% zoom, and at a 390px viewport.
+  Review screen-reader announcements and contrast alongside automated checks.
+- Prove that an older response cannot overwrite a newer draft or another trip;
+  switching users must not expose the previous user's stored drafts.
+- Test real conflict responses and retry identities against the API, alongside
+  injected delays and fixture failures. Do not replace every backend interaction
+  with a browser mock and then claim integration coverage.
+- Run the final workflow with external traffic blocked and loopback available.
+  Record that setup and any limits; browser helper tests alone do not prove it.
 
 Implement slices against the existing API contract first. Adopt a component
 framework only if its benefits outweigh added build/dependency complexity; a
