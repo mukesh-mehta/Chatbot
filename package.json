@@ -1,0 +1,14 @@
+{
+  "name": "flight-chatbot-frontend",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/frontend.test.js",
+    "format": "prettier --write \"web/**/*.{js,css,html}\" \"tests/*.js\" package.json",
+    "format:check": "prettier --check \"web/**/*.{js,css,html}\" \"tests/*.js\" package.json"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}

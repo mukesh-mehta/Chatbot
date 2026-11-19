@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Plan a flight through a conversation. A Python 3.12 chatbot prototype with sample itineraries and a simple trip workspace."
+    />
+    <title>Chatbot · Your flight workspace</title>
+    <link rel="icon" href="/assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <script type="module" src="/assets/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#workspace">Skip to workspace</a>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Chatbot home"
+        ><img src="/assets/mark.svg" alt="" width="40" height="40" /><span
+          >chatbot<span class="brand-subtitle">FLIGHT ASSISTANT</span></span
+        ></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#workspace" class="active" aria-current="page">Workspace</a
+        ><a
+          href="https://github.com/mukesh-mehta/Chatbot/blob/master/ROADMAP.md"
+          target="_blank"
+          rel="noopener"
+          >Roadmap</a
+        ><a
+          href="https://github.com/mukesh-mehta/Chatbot"
+          target="_blank"
+          rel="noopener"
+          >GitHub</a
+        >
+      </nav>
+      <span class="prototype-badge">Prototype</span>
+    </header>
+    <main id="workspace">
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">LESS SEARCHING. MORE GOING.</p>
+          <h1 id="page-title">Where would you like to go?</h1>
+          <p>Start a conversation. Find an itinerary. Make it your own.</p>
+        </div>
+        <div class="sample-note">
+          <span class="sample-icon" aria-hidden="true">✳</span>
+          <div>
+            <strong>A space to explore</strong
+            ><span>Sample flights. No live fares or bookings.</span>
+          </div>
+        </div>
+      </section>
+      <div
+        id="connection-error"
+        class="notice error-notice"
+        role="alert"
+        hidden
+      ></div>
+      <div class="workspace-grid">
+        <section class="chat-panel panel" aria-labelledby="chat-title">
+          <div class="chat-heading">
+            <div class="assistant-avatar" aria-hidden="true">
+              c<span>✳</span>
+            </div>
+            <div>
+              <h2 id="chat-title">Your travel assistant</h2>
+              <p id="connection-status" role="status">
+                Connecting to your workspace…
+              </p>
+            </div>
+            <button
+              id="new-trip"
+              class="quiet-button"
+              type="button"
+              aria-label="Start a new trip"
+            >
+              New trip
+            </button>
+          </div>
+          <div
+            id="messages"
+            class="messages"
+            role="log"
+            aria-label="Conversation"
+            aria-live="polite"
+            aria-relevant="additions"
+          ></div>
+          <div id="working" class="working" role="status" hidden>
+            Putting your trip together…
+          </div>
+          <div class="suggestions">
+            <p class="eyebrow">TRY SAYING</p>
+            <div id="suggestions">
+              <button type="button" data-prompt="Delhi to Mumbai tomorrow">
+                Delhi to Mumbai tomorrow</button
+              ><button type="button" data-prompt="2 adults">2 adults</button
+              ><button type="button" data-prompt="business">
+                Business class
+              </button>
+            </div>
+          </div>
+          <form id="chat-form" class="composer">
+            <label for="message" class="sr-only"
+              >Message your travel assistant</label
+            ><textarea
+              id="message"
+              name="message"
+              rows="2"
+              maxlength="500"
+              placeholder="Tell me about your next trip…"
+              required
+            ></textarea>
+            <div class="composer-footer">
+              <span>Enter to send · Shift + Enter for a new line</span
+              ><button class="button primary" id="send-message" type="submit">
+                Send
+              </button>
+            </div>
+          </form>
+          <p class="privacy-note" id="privacy-note">
+            Conversation stays in this tab. No account needed.
+          </p>
+        </section>
+        <div class="trip-workspace">
+          <section class="trip-panel panel" aria-labelledby="trip-title">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">THE DETAILS, TOGETHER</p>
+                <h2 id="trip-title">Your trip</h2>
+              </div>
+              <span class="progress-label" id="trip-progress"
+                >0 of 3 details ready</span
+              >
+            </div>
+            <form id="trip-form">
+              <fieldset class="trip-types">
+                <legend class="sr-only">Trip type</legend>
+                <label
+                  ><input
+                    type="radio"
+                    name="trip_type"
+                    value="one_way"
+                    checked
+                  /><span>One way</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="trip_type"
+                    value="round_trip"
+                  /><span>Round trip</span></label
+                >
+              </fieldset>
+              <div class="route-fields">
+                <label
+                  >From<select
+                    id="origin"
+                    name="origin"
+                    required
+                    aria-describedby="form-errors"
+                  >
+                    <option value="">Departure city</option>
+                  </select></label
+                ><button
+                  type="button"
+                  id="swap-airports"
+                  class="swap-button"
+                  aria-label="Swap departure and destination"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 8h16m-4-4 4 4-4 4M20 16H4m4-4-4 4 4 4" />
+                  </svg></button
+                ><label
+                  >To<select
+                    id="destination"
+                    name="destination"
+                    required
+                    aria-describedby="form-errors"
+                  >
+                    <option value="">Destination city</option>
+                  </select></label
+                >
+              </div>
+              <div class="form-grid">
+                <label
+                  >Departure<input
+                    type="date"
+                    id="departure_date"
+                    name="departure_date"
+                    required
+                    aria-describedby="form-errors" /></label
+                ><label
+                  >Return<input
+                    type="date"
+                    id="return_date"
+                    name="return_date"
+                    disabled
+                    aria-describedby="form-errors" /></label
+                ><label
+                  >Travellers<select id="adults" name="adults">
+                    <option value="1">1 adult</option>
+                    <option value="2">2 adults</option>
+                    <option value="3">3 adults</option>
+                    <option value="4">4 adults</option>
+                    <option value="5">5 adults</option>
+                    <option value="6">6 adults</option>
+                    <option value="7">7 adults</option>
+                    <option value="8">8 adults</option>
+                    <option value="9">9 adults</option>
+                  </select></label
+                ><label
+                  >Cabin<select id="cabin" name="cabin">
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                  </select></label
+                >
+              </div>
+              <div
+                id="form-errors"
+                class="form-errors"
+                role="alert"
+                hidden
+              ></div>
+              <div class="search-footer">
+                <span>Dates and flight times use India Standard Time.</span
+                ><button
+                  type="submit"
+                  class="button primary"
+                  id="search-flights"
+                >
+                  Search sample flights
+                </button>
+              </div>
+            </form>
+          </section>
+          <section
+            class="results-section"
+            aria-labelledby="results-title"
+            aria-busy="false"
+          >
+            <div class="results-heading">
+              <div>
+                <h2 id="results-title">Flight options</h2>
+                <p id="results-caption">
+                  A few possibilities for your next trip.
+                </p>
+              </div>
+              <label class="sort-label"
+                >Sort by<select id="sort" disabled>
+                  <option value="recommended">Recommended</option>
+                  <option value="price">Lowest price</option>
+                  <option value="duration">Shortest duration</option>
+                </select></label
+              >
+            </div>
+            <div id="results">
+              <div class="empty-state">
+                <div class="empty-illustration" aria-hidden="true">
+                  <span class="airport-dot"></span
+                  ><svg viewBox="0 0 120 64">
+                    <path d="M4 52C38 52 38 12 94 12" />
+                    <path class="plane" d="m86 8 20-5-8 20-4-10z" /></svg
+                  ><span class="empty-cloud"></span>
+                </div>
+                <h3>Your next trip starts here.</h3>
+                <p>
+                  Tell the assistant your route, or fill in the details
+                  above.<br />We’ll bring a few sample options together.
+                </p>
+                <span class="empty-label"
+                  >8 airports · One way & round trip</span
+                >
+              </div>
+            </div>
+          </section>
+          <section
+            id="saved-trip"
+            class="saved-trip"
+            aria-labelledby="saved-title"
+            hidden
+          >
+            <div>
+              <span class="eyebrow">KEPT FOR LATER</span>
+              <h3 id="saved-title">Your saved itinerary</h3>
+              <p id="saved-description"></p>
+              <p class="saved-disclaimer">
+                Saved in this tab. No reservation has been made.
+              </p>
+            </div>
+            <button class="button secondary" id="download-trip" type="button">
+              Download trip
+            </button>
+          </section>
+        </div>
+      </div>
+      <footer>
+        <span>Good plans start with a conversation.</span
+        ><span>Chatbot · Flight planning prototype</span>
+      </footer>
+    </main>
+    <dialog id="reset-dialog">
+      <h2>Start a fresh trip?</h2>
+      <p>This clears the conversation and saved itinerary in this tab.</p>
+      <form method="dialog">
+        <button class="button secondary" value="cancel">Keep planning</button
+        ><button class="button primary" id="confirm-reset" value="confirm">
+          Start new trip
+        </button>
+      </form>
+    </dialog>
+    <noscript
+      ><p class="notice">
+        Enable JavaScript to use the chat and trip editor. The JSON API is
+        available at /api/chat and /api/search.
+      </p></noscript
+    >
+  </body>
+</html>
