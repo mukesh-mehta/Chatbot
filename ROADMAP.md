@@ -12,6 +12,34 @@ lets a person build a trip through chat or a form, and displays fictional flight
 options. Real supplier availability, general-purpose AI, accounts, and bookings
 are still future work.
 
+## Twelve-feature product roadmap
+
+These are the **12 planned product features** summarized at the top of the
+[README](README.md#feature-roadmap). The existing sample-data application is the
+foundation; none of these complete feature expansions is marked as delivered.
+Use the backlog IDs below to find the detailed acceptance criteria and dependencies
+later in this document.
+
+| # | Planned feature | Completion goal | Detailed backlog |
+| --- | --- | --- | --- |
+| 1 | AI-powered conversations | Evaluate an optional model on real conversation tasks, clarify uncertain inputs, and retain a usable non-AI fallback. | NLU-01–NLU-08, CORE-02 |
+| 2 | Live flight search | Return validated supplier availability and fares with expiry, refresh, and outage handling. | PROV-01–PROV-07, CORE-03 |
+| 3 | Advanced flight comparison | Let users filter and compare itineraries using facts actually provided by the supplier. | FE-07, FE-08, PROV-03 |
+| 4 | Advanced planning frontend | Deliver accessible airport/date controls, reliable asynchronous interactions, better mobile navigation, and repeatable browser tests. | FE-01–FE-06, FE-12–FE-15 |
+| 5 | User accounts and saved trips | Persist owned trips securely across devices, handle conflicting edits, and migrate local trips only with user intent. | DATA-01–DATA-05, FE-09 |
+| 6 | Itinerary sharing and richer exports | Provide readable exports and revocable, permission-checked sharing without exposing unnecessary personal data. | FE-10, DATA-02–DATA-04 |
+| 7 | Price-drop alerts | Monitor opted-in searches within supplier quotas and provide useful notifications with easy unsubscribe. | EXT-03, PROV-06, OPS-03 |
+| 8 | Multilingual and voice assistance | Support tested locales and languages, editable speech transcripts, explicit recording controls, and text fallback. | NLU-08, FE-11, EXT-02, GOV-03 |
+| 9 | Messaging-channel integration | Reuse the trip workflow through a supported messaging channel with verified events and account linking. | EXT-01, DATA-02, CORE-05 |
+| 10 | Booking and payment workflow | Reprice before explicit confirmation, process supplier/payment operations safely, and distinguish quotes from tickets. | BOOK-01–BOOK-04 |
+| 11 | Changes, cancellations, and disruption support | Show authoritative cancellation/refund/disruption status and provide a human assistance path for uncertain outcomes. | BOOK-05, EXT-05 |
+| 12 | Production deployment and operations | Operate a protected service with measured capacity, useful monitoring, backups, recovery, and documented ownership. | OPS-01–OPS-06, CORE-04–CORE-06, GOV-01–GOV-04 |
+
+**Recommended sequence:** feature 4 and core contracts first; features 1 and 2
+next; then features 3, 5, and 12. Features 6–9 can follow their documented
+dependencies. Features 10 and 11 require validated suppliers, ownership checks,
+and operational readiness before real transactions are enabled.
+
 ## Status and priority conventions
 
 - **Delivered:** implemented in the active runtime and covered by the checks

@@ -5,6 +5,40 @@ an editable trip form, and clearly labeled sample itineraries.
 
 [![Python 3.12 and frontend checks](https://github.com/mukesh-mehta/Chatbot/actions/workflows/ci.yml/badge.svg)](https://github.com/mukesh-mehta/Chatbot/actions/workflows/ci.yml)
 
+[**12-feature roadmap**](#feature-roadmap) · [Detailed development plan](ROADMAP.md) · [Frontend plan](docs/FRONTEND.md)
+
+## Feature roadmap
+
+**These 12 features are planned extensions.** The working prototype already offers
+chat, an editable trip form, sample flight results, sorting, and local itinerary
+export. The roadmap below describes what remains to build; live flights, AI model
+integration, accounts, and booking are not implemented yet.
+
+| # | Planned feature | What will be added | Status |
+| --- | --- | --- | --- |
+| 1 | **AI-powered conversations** | Optional LLM integration, better intent recognition, multi-turn corrections, clarification questions, and a reliable fallback to the trip form. | Planned |
+| 2 | **Live flight search** | A supported flight-provider API, real availability, current fares, offer expiry, and price refresh before selection. | Planned |
+| 3 | **Advanced flight comparison** | Filters for price, stops, departure time, duration, and available baggage information; side-by-side itinerary comparisons. | Planned |
+| 4 | **Advanced planning frontend** | Searchable airport selection, linked date calendars, improved mobile navigation, accessible controls, and clearer loading/error states. | Planned |
+| 5 | **User accounts and saved trips** | Sign-in, database-backed trip history, named itineraries, cross-device access, and safe concurrent edits. | Planned |
+| 6 | **Itinerary sharing and richer exports** | Readable itinerary exports, revocable sharing links, access controls, and clear warnings when a saved price expires. | Planned |
+| 7 | **Price-drop alerts** | Opt-in route monitoring, target-price notifications, unsubscribe controls, and provider-aware polling limits. | Planned |
+| 8 | **Multilingual and voice assistance** | Translated interfaces, evaluated multilingual conversations, voice input, editable transcripts, and recording controls. | Planned |
+| 9 | **Messaging-channel integration** | A supported messaging channel such as Messenger, with verified webhooks, account linking, and duplicate-event handling. | Planned |
+| 10 | **Booking and payment workflow** | Fresh quotes, explicit user confirmation, supplier reservations, hosted payment, and verified booking status. | Planned |
+| 11 | **Changes, cancellations, and disruption support** | Supplier-backed cancellation/refund status, disruption updates, and escalation to human assistance. | Planned |
+| 12 | **Production deployment and operations** | Protected hosting, authentication, request limits, operational dashboards, monitoring, load testing, backups, and recovery procedures. | Planned |
+
+**Build order:** improve the frontend and API contracts first; add evaluated AI
+and live search next; then accounts and protected hosting. Booking, payments, and
+post-booking support follow those foundations.
+
+The [full roadmap](ROADMAP.md#twelve-feature-product-roadmap) maps every feature
+to its detailed backlog, dependencies, and acceptance criteria. Planned features
+remain optional: the Python 3.12 prototype runs without them.
+
+## Workspace preview
+
 ![The flight-planning workspace](docs/workspace.jpg)
 
 This update makes the project's flight-assistant concept runnable on a current
