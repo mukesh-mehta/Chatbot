@@ -11,6 +11,10 @@ a complete repository-level license inventory. This update preserves that materi
 and does not assert ownership or apply a new license to it. In particular, embedded
 notices such as the one in `legacy/emoji/__init__.py` remain intact.
 
+The credential cleanup described in [the archive notice](legacy/ARCHIVE.md)
+removes embedded authentication material and compiled copies without changing
+the license or ownership of the remaining historical code.
+
 Do not infer the license of a modified historical file solely from a current
 upstream project's license. Resolve its exact source/version and required notices
 before moving it into the active runtime. The licensing/provenance backlog is

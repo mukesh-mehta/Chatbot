@@ -219,7 +219,7 @@ web/              Buildless HTML, CSS, JavaScript workspace
 tests/            Python behavior tests and JavaScript state tests
 scripts/          Real-HTTP smoke check
 docs/             Migration, API, frontend, verification, screenshots
-legacy/           Unmodified historical implementation and model artifacts
+legacy/           Historical code/model archive; credential settings sanitized
 ROADMAP.md        Prioritized product and engineering backlog
 run.py            Supported Python 3.12 entry point
 ```

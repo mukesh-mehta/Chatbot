@@ -45,6 +45,19 @@ hashes were compared with the starting commit and matched. The new archive notic
 is additional documentation; original file contents and existing Git history
 were preserved.
 
+That records the initial migration on 19 November. On 20 November, credential
+sanitization changed the Goibibo configuration and Facebook entry-point settings
+and removed two compiled configuration files containing keys. The archive is no
+longer a byte-for-byte copy of every original file; see [the cleanup notice](../legacy/ARCHIVE.md).
+
+The 20 November cleanup checked all 250 remaining tracked files, including raw
+binary content, for the removed source/compiled credential values and common
+provider-token, private-key, and credential-URL patterns. Those checks passed.
+Archived configuration expressions were checked with no settings and with
+synthetic environment values, without loading Rasa or contacting any provider.
+The active application's 46 Python and six JavaScript tests also passed again.
+This checks the current files; it is not a purge or complete scan of Git history.
+
 ## Limits of this verification
 
 No live supplier, messaging-channel, LLM, booking, payment, or cloud-hosting

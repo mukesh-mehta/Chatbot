@@ -1,9 +1,9 @@
-
+import os
 
 config = {
     "goibibo":{
-        "app_id":"REMOVED_CREDENTIAL",
-        "app_key":"REMOVED_CREDENTIAL",
+        "app_id":os.environ.get("GOIBIBO_APP_ID", ""),
+        "app_key":os.environ.get("GOIBIBO_APP_KEY", ""),
         "urls":{
             "base_url":"http://developer.goibibo.com",
             "flight_search":"/api/search/",

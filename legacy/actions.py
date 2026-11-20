@@ -4,6 +4,7 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 import logging
+import os
 
 from rasa_dm.actions.action import Action
 from rasa_dm.policies.keras_policy import KerasPolicy
@@ -20,7 +21,7 @@ from date import magicdate
 import json
 
 logger = logging.getLogger(__name__)
-access_token = #facebook page access token
+access_token = os.environ.get("FACEBOOK_PAGE_ACCESS_TOKEN", "")
 
 MB = MessengerBot(access_token)
 

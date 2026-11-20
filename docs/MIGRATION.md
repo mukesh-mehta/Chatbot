@@ -51,7 +51,8 @@ supplier integration are outside that development phase.
 - The web UI uses native ES modules; there is no Python/JavaScript build coupling.
 - The archive is excluded from test discovery, formatting, the Docker context,
   and the application's imports and static-file routes.
-- Existing repository history remains intact; moves preserve file contents.
+- The original archive move preserved file contents and repository history.
+  The later credential cleanup is documented in [the archive notice](../legacy/ARCHIVE.md).
 
 ## Verification before dependency changes
 
