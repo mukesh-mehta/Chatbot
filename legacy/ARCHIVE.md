@@ -18,8 +18,12 @@ now use `FACEBOOK_VERIFY_TOKEN`, `FACEBOOK_APP_SECRET`, `FACEBOOK_PAGE_ID`, and
 the maintained application, and these changes do not make the archive runnable
 or supported. Do not commit credentials or regenerate tracked bytecode files.
 
-This cleanup changes the current files; it does not erase older Git commits.
-Previously exposed keys must be revoked or rotated by their owner if still valid.
+The initial cleanup changed the current files only. A subsequent history rewrite
+on the same date removed the exposed values from the published branch's earlier
+commits as well. That scan also found a Facebook access token in an already
+deleted compiled actions file. See [the history cleanup record](../docs/HISTORY_CLEANUP.md)
+for verification, clone recovery instructions, and copies outside this branch.
+Previously exposed keys must still be revoked or rotated if valid.
 
 ## Compatibility and provenance
 

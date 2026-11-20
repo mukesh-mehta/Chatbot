@@ -53,6 +53,8 @@ supplier integration are outside that development phase.
   and the application's imports and static-file routes.
 - The original archive move preserved file contents and repository history.
   The later credential cleanup is documented in [the archive notice](../legacy/ARCHIVE.md).
+  Published history was subsequently rewritten; existing clones must follow
+  [the cleanup guidance](HISTORY_CLEANUP.md) before contributing again.
 
 ## Verification before dependency changes
 

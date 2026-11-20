@@ -58,6 +58,14 @@ synthetic environment values, without loading Rasa or contacting any provider.
 The active application's 46 Python and six JavaScript tests also passed again.
 This checks the current files; it is not a purge or complete scan of Git history.
 
+A subsequent history rewrite on the same date checked all 14 original commits
+and removed five exposed values, including a historical Facebook token that was
+absent from the current files. All 455 stored Git objects in the rewritten mirror
+were scanned, with zero matches for the removed values or the provider patterns
+checked. Every rewritten commit tree matched the expected credential removal;
+the current file tree was unchanged before the follow-up documentation update.
+See [the history cleanup record](HISTORY_CLEANUP.md) for scope and external copies.
+
 ## Limits of this verification
 
 No live supplier, messaging-channel, LLM, booking, payment, or cloud-hosting
